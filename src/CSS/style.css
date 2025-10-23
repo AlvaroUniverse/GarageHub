@@ -1,0 +1,103 @@
+*{
+    outline:  1px solid rgba(255, 0, 0, 0);
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    display: flex;
+    background-color: #002776;
+}
+
+#logo-senna-header{
+    display: flex;
+    justify-content: baseline;
+    width: fit-content;
+    height: fit-content;
+}
+
+#logo-senna-header img{
+    width: 200px;
+}
+
+#table-header{
+    list-style: none; /* remove as bolinhas */
+    display: flex;    /* faz os itens ficarem na horizontal */
+    gap: 30px;
+    margin-left: 38%;
+    margin-top: 1%;
+}
+
+#table-header li a{
+    text-decoration: none; /* remove sublinhado */
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: Poppins_Font, sans-serif;
+}
+
+#table-header li a:hover{
+    color: #ffc620; /* amarelo senna */
+    transition: 0.3s;
+}
+
+main{
+    background-color: #FFC620;
+}
+
+#capacete-senna{
+    display: flex;
+    justify-content: baseline;
+    position: absolute;  /* fixa o logo dentro do header */
+    top: -10px;
+    left: 200px;
+}
+
+#capacete-senna img{
+    width: 250px;
+    /* estado inicial */
+    opacity: 0;
+    transform: translateY(30px); /* começa mais embaixo */
+    /* animação */
+    animation: aparecerDeBaixoCapacete 1.0s ease-out forwards;
+}
+
+@keyframes aparecerDeBaixoCapacete {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#columm-green-header{
+    display: flex;
+    background-color: #0baf5a; /* verde */
+    box-shadow: 0 -4px 0 #ffffff, 0 -6px 0 #002776, 0 -10.5px 0 #ffffff, 0 5px 0 #ffffff, 0 7px 0 #002776, 0 10.5px 0 #ffffff;
+    width: 0; /* começa sem largura */
+    animation: expandirFaixa 1.5s ease-out forwards;
+    margin-top: 1%;
+}
+
+#columm-blue-header{
+    display: flex;
+    background-color: #002776;
+    box-shadow: 0 -4px 0 #ffffff, 0 -6px 0 #0baf5a, 0 -10.5px 0 #ffffff, 0 5px 0 #ffffff, 0 7px 0 #0baf5a, 0 10.5px 0 #ffffff;
+    width: 0;
+    animation: expandirFaixa 1.5s ease-out forwards;
+    animation-delay: 0.5s; /* começa um pouco depois */
+    margin-top: 3%;
+}
+
+/* Animação padrão */
+@keyframes expandirFaixa {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
