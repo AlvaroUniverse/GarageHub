@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login/Cadastro</title>
+
+    <link rel="stylesheet" href="../src/CSS/pages/login.css">
 </head>
 <body>
-    <main class="video-bg">
+    <header>
+        <!--Pode até que eu coloque um header da marca Senna só-->
+    </header>
+    <main>
         <video autoplay muted loop class="background-video">
             <source src="../assets/videos/pages/signinUser/AyrtonSennaNoPulsoDoBrasil.mp4" type="video/mp4">
             Seu navegador não suporta vídeo.
         </video>
+        
+
+        <form action="" method="post" class="login-card">
+            <h3 style="margin-left: 39%;">Login</h3>
+            <label for="">Email:</label>
+            <input type="email" name="email-login" id="email-login" placeholder="emailexemplo@gmail.com" required>
+            <label for="">Senha:</label>
+            <input type="password" name="password-login" id="password-login" required>
+            <input type="submit" value="Entrar" style="margin-left: 39%;">
+        </form>
     </main>
 </body>
 </html>
