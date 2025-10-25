@@ -18,8 +18,8 @@
 
         <table>
             <ul id="table-header">
-                <li><a href="">Vender</a></li>
                 <li><a href="">Comprar</a></li>
+                <li><a href="">Vender</a></li>
                 <li><a href="">Meus Carros</a></li>
                 <li><a href="pages/login.html">Login/Cadastrar</a></li>
             </ul>
@@ -50,7 +50,7 @@
         <h2 style="display: flex;justify-content: center;color: black;opacity: 70%;font-family: Poppins_Font, sans-serif;margin-top: 5%;"><strong><u>Encontre o carro dos seus sonhos!</u></strong></h2>
 
         <div class="options-combo-text-container">
-            <input list="carros-famosos" type="text" placeholder="Pesquise seu carro de F1">
+            <input list="carros-famosos" type="text" id="search-cars" placeholder="Pesquise seu carro de F1">
                 <datalist id="carros-famosos">
                     <option value="McLaren MP4/4 - 1988">
                     <option value="Williams FW14B - 1992">
@@ -60,13 +60,15 @@
                 </datalist>
             <select name="select-location" id="select-location" style="cursor: pointer;">
                 <option value="" selected disabled>Selecione sua localização</option>
+                <option value="nenhuma">Nenhuma</option>
                 <option value="santos">Santos - SP</option>
                 <option value="praia_grande">Praia Grande - SP</option>
             </select>
-            <select name="select-marca" id="select-marca">
+            <select name="select-marca" id="select-marca" style="cursor: pointer;">
                 <option value="" selected disabled>Selecione sua marca</option>
+                <option value="nenhuma">Nenhuma</option>
                 <option value="mclaren">McLaren</option>
-                <option value="williams">McLaren</option>
+                <option value="williams">Williams</option>
                 <option value="ferrari">Ferrari</option>
             </select>
         </div>
