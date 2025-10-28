@@ -4,6 +4,10 @@
     padding: 0%;
 }
 
+body{
+  background-color: #E7E7E7;
+}
+
 header{
     display: flex;
     background-color: #002776;
@@ -158,4 +162,33 @@ main{
   height: 40px;
   font-weight: bold;
   padding: 5px;
+}
+
+.options-combo-text-container input, select{
+  background-color: #E8E8E8;
+  border-radius: 10px;
+}
+
+.content-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.car-card{
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+  background-color: #FCFCFC;
+  width: 300px;
+}
+
+.car-card:hover{
+  filter: drop-shadow(10px 5px 5px black);
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.car-card:not(:hover){
+  transition: transform 0.3s ease;
 }
