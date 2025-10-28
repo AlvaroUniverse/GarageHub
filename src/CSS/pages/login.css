@@ -81,6 +81,13 @@ main{
     border-right: none;
 }
 
+#login-card input[type="email"]:focus,
+#login-card input[type="password"]:focus{
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
 #login-card input[type="submit"]{
     width: 50%;
     height: 35px;
