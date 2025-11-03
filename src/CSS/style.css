@@ -5,12 +5,14 @@
 }
 
 body{
-  background-color: #E7E7E7;
+  background: linear-gradient(to bottom, #ffc620, #ffc620, #FCFCFC);
+  height: 100vh;
 }
 
 header{
     display: flex;
     background-color: #002776;
+    justify-content: center;
 }
 
 #logo-senna-header{
@@ -164,9 +166,21 @@ main{
   padding: 5px;
 }
 
-.options-combo-text-container input, select{
+.options-combo-text-container button{
   background-color: #E8E8E8;
   border-radius: 10px;
+  width: 20%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.options-combo-text-container button:hover{
+  filter: drop-shadow(0px 0px 10px #0baf5a);
+  color: rgb(7, 4, 238);
+  background-color: #FFC620;
+  text-transform: uppercase;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .content-container{
