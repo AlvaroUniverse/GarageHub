@@ -4,51 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar carro</title>
+    <link rel="stylesheet" href="../src/CSS/pages/adicionar-carros.css">
 </head>
 <body>
-    <form action="" method="post">
-        <table border="1">
-            <tr>
-                <td>Nome Completo do Vendedor: </td>
-                <td><input type="text" placeholder="Nome completo"></td>
-            </tr>
-            <tr>
-                <td>Marca do Carro:</td>
-                <td>
-                    <select name="marcas" id="marcas-carros">
-                        <option value="mclaren">Mclaren</option>
-                        <option value="ferrari">Ferrari</option>
-                        <option value="sauber">Sauber</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Nome do carro:
-                </td>
-                <td>
-                    <input type="text" placeholder="Nome do carro">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Ano do carro:
-                </td>
-                <td>
-                    <input type="number" name="ano-carro" id="ano-carro">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Foto Única do Carro:
-                </td>
-                <td>
-                    <input type="file" name="foto-carro" id="">
-                </td>
-            </tr>
-        </table>
-
-        <input type="submit" value="Enviar">
-    </form>
+    <header>
+        <div id="logo-senna-header">
+            <a href="..//index.html">
+                <img src="../assets/images/logos/Ayrton_Senna_Branco_logo_horizontal.png" alt="">
+            </a>
+        </div>
+    </header>
+    <div class="divFormulario">
+        <form action="" method="post">
+            <table border="1">
+                <tr>
+                    <td><p>Nome Completo do Vendedor: </p></td>
+                    <td><input type="text" placeholder="Nome completo" title="Nome Vendedor"></td>
+                </tr>
+                <tr>
+                    <td><p>Marca do Carro:</p></td>
+                    <td>
+                        <select name="marcas" id="marcas-carros">
+                            <option value="default" disabled selected>Selecione</option>
+                            <option value="mclaren">Mclaren</option>
+                            <option value="ferrari">Ferrari</option>
+                            <option value="sauber">Sauber</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Nome do carro:</p>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Nome do carro">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ano do carro:</p>
+                    </td>
+                    <td>
+                        <input type="number" name="ano-carro" id="ano-carro">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Foto Única do Carro:</p>
+                    </td>
+                    <td>
+                        <input type="file" name="foto-carro" id="" accept="image/*">
+                    </td>
+                </tr>
+            </table>
+    
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>
