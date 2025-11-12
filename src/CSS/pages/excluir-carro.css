@@ -1,0 +1,55 @@
+*{
+    outline: 1px solid rgba(255, 0, 0, 0);
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    display: flex;
+    background-color: #002776;
+    justify-content: center;
+}
+
+#logo-senna-header{
+    display: flex;
+    justify-content: baseline;
+    width: fit-content;
+    height: fit-content;
+}
+
+#logo-senna-header img{
+    width: 200px;
+}
+
+
+p, h1, h2, h3, h4, h5, h6, u, strong, i{
+    display: inline-block;
+}
+
+.divFormularioDesativar{
+    displaY: flex;
+    justify-content: center;
+}
+
+table{
+    margin-left: 12%;
+    
+}
+
+.divFormularioDesativar table, td, tr{
+    border-collapse: collapse;
+    width: 75%;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.divFormularioDesativar select{
+    width: 100%;
+}
+
+#enviar-formulario{
+    width: 50%;
+    cursor: pointer;
+    margin-left: 26%;
+    margin-top: 5%;
+}
