@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senna Drive</title>
+
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="stylesheet" href="src/CSS/global/fonts.css">
+</head>
+<body>
+    <header>
+        <div id="logo-senna-header">
+            <a href="index.html">
+                <img src="assets/images/logos/Ayrton_Senna_Branco_logo_horizontal.png" alt="">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div id="capacete-senna">
+            <img src="assets/images/icons/capacete-senna.png" alt="logotipo Ayrton Senna">
+        </div>
+
+        <h1 style="color: #002776;font-family: Poppins_Font, sans-serif;font-size: 3rem;margin-left: 30%;" id="revendedora-text-main"><strong>REVENDEDORA</strong></h1>
+
+        <div id="columm-green-header">
+            <p>.</p>
+        </div>
+
+        <div id="columm-blue-header">
+            <p>.</p>
+        </div>
+
+        <h1 style="color: #002776;font-family: Poppins_Font, sans-serif;font-size: 3rem;margin-left: 57%;margin-top: 1%;" id="senna-text-main"><strong>AYRTON SENNA</strong></h1>
+    </main>
+
+    
+    <section class="scroll-fade">
+
+        <h2 style="display: flex;justify-content: center;color: black;opacity: 70%;font-family: Poppins_Font, sans-serif;margin-top: 5%;"><strong><u>Encontre o carro dos seus sonhos!</u></strong></h2>
+
+        <div class="options-combo-text-container">
+            <button id="cadastrar-carro">
+                <a href="pages/adicionar-carros.html">Adicionar carro</a>
+            </button>
+
+            <button id="ver-carros">
+                <a href="pages/ver-carros.html">
+                    Ver Carros
+                </a>
+            </button>
+
+            <button id="excluir-carros">
+                <a href="pages/excluir-carro.html">
+                    Desativar Carro
+                </a>
+            </button>
+        </div>
+        
+        <div class="content-container">
+            <div class="car-card">
+                <!--Ver se vai ser em .php ou em .html-->
+            </div>
+
+        </div>
+
+    </section>
+        <!--Scripts-->
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible'); // opcional: reanima ao voltar
+                }
+                });
+            });
+
+            // Aplica o observador a todos os elementos com a classe .scroll-fade
+            document.querySelectorAll('.scroll-fade').forEach((el) => observer.observe(el));
+        </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desativar Carro</title>
+    <link rel="stylesheet" href="../src/CSS/pages/excluir-carro.css">
+</head>
+<body>
+    <header>
+        <div id="logo-senna-header">
+            <a href="index.html">
+                <img src="../assets/images/logos/Ayrton_Senna_Branco_logo_horizontal.png" alt="">
+            </a>
+        </div>
+    </header>
+    <br>
+    <div class="divFormularioDesativar">
+        <form action="" method="post">
+            <h1>Desativar Carro</h1>
+            <table border="1">
+                <tr>
+                    <td>Selecione o carro para excluir:</td>
+                    <td>
+                        <select name="selecionar-carro-excluir" id="" required>
+                            <!--Colocar os <options> via PHP-->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Explique o Motivo:</td>
+                    <td>
+                        <input type="text" name="motivo-desativar" id="motivo-desativar" placeholder="Explique aqui o motivo" required>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="checkbox" name="check-responsa" id="check-responsa" style="cursor: pointer;" required>
+            <label for="check-responsa">Me responsabizo que, após desativar o carro, não terá como reverter essa ação.</label>
+            <br>
+            <input type="submit" value="Desativar Carro" id="enviar-formulario">
+        </form>
+    </div>
+</body>
+</html>
